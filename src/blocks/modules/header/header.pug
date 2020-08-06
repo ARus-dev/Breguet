@@ -1,0 +1,67 @@
+header
+    .header
+        .header__top
+            .header__logo
+                img(src="/img/logo.png", alt="")
+            .header__burger
+                .header__burgerLine    
+                .header__burgerLine    
+                .header__burgerLine    
+        .header__aside
+            .header__logo
+                img(src="/img/logo.png", alt="")
+            .header__asideText
+                p Europe, USA
+                p Since 1775    
+        .header__body   
+            h1.header__title.
+                <span>BREGUET UNVEILS 
+                NEW TIMEPIECES 
+                IN ITS <span class="text_color_blue">CLASSIQUE</span> 
+                AND MARINE 
+                LINES</span> 
+            .header__content
+                .header__info
+                    .header__item
+                        p.header__subtitle 100+
+                        p.
+                            <span class="header__text">famous clients all over
+                            the world</span>  
+                    .header__item
+                        p.header__subtitle 300+
+                        p. 
+                            <span class="header__text">years we help our clients 
+                            to keep track of time</span>  
+                .header__img
+                    img(src="/img/header-img.png", alt="")
+                    .header__circle_withImg    
+                        include ../../components/circle/circle   
+                            block circle__item
+                                button.header__btn
+                                    p discover
+                                    div.circle__icon
+                                        img(src="/img/arrow.png", alt="")             
+                .header__circle    
+                    include ../../components/circle/circle   
+                        block circle__item
+                            button.header__btn
+                                p discover
+                                div.circle__icon
+                                    img(src="/img/arrow.png", alt="") 
+        .header__aside.header__aside_right
+            .header__burger
+                .header__burgerLine    
+                .header__burgerLine    
+                .header__burgerLine
+            .slider__dots
+                .slider__dot    
+                .slider__dot    
+                .slider__dot    
+                .slider__dot    
+                .slider__dot.slider__dot_active    
+        nav.header__nav
+            ul.header__menu
+                - headerLinks = ['Timepieces', 'Jewellery', 'News', 'Point of sale', 'House of Breguet', 'Services', 'History', 'Contact us']
+                each link in headerLinks
+                    li.header__link 
+                        a(href="#")=link                            
