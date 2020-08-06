@@ -1,0 +1,24 @@
+@font-face {
+	font-family: 'ArchivoBlack';
+	src: local('Archivo'), local('ArchivoBlack'),
+		url('../fonts/ArchivoBlack-Regular.woff') format('woff'),
+		url('../fonts/ArchivoBlack-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'RobotoCondensed';
+	src: local('Roboto'), local('RobotoCondensed'),
+		url('../fonts/RobotoCondensed-Regular.woff') format('woff'),
+		url('../fonts/RobotoCondensed-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'RobotoCondensed';
+	src: local('Roboto'), local('RobotoCondensed'),
+		url('../fonts/RobotoCondensed-Light.woff') format('woff'),
+		url('../fonts/RobotoCondensed-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
