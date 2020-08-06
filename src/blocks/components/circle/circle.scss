@@ -1,0 +1,14 @@
+.circle {
+    align-items: center;
+    background-color: $color-blue;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    font-size: 14px;
+    height: 120px;
+    justify-content: center;
+    width: 120px;
+    &__icon {
+        margin-top: 12px;
+    }
+}
