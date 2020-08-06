@@ -2,11 +2,13 @@
     align-items: center;
     background-color: $color-blue;
     border-radius: 50%;
+    box-shadow: 0px 0px 50px rgba(33, 74, 194, 0.5);
     color: #fff;
     display: flex;
     font-size: 14px;
     height: 120px;
     justify-content: center;
+    position: relative;
     width: 120px;
     &__icon {
         margin-top: 12px;
