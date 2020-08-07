@@ -54,6 +54,9 @@ ul, ol {
 	}
 }
 .text {
+	&_block {
+		display: block;
+	}
 	&_color {
 		&_blue {
 			color: $color-blue;

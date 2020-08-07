@@ -146,6 +146,9 @@
             flex-direction: row;
         }
     }
+    &__info {
+        margin-right: 100px;
+    }
     &__circle {
         align-self: flex-end;
         margin-right: 40px;
