@@ -1,0 +1,6 @@
+.line {
+    @include _1024 {
+        @include line(calc(100% + 200px), -100px, auto);
+        left: calc(32.4% + 400px);
+    }
+}
