@@ -25,13 +25,15 @@
         display: none;
         flex-direction: column;
         padding: 40px 0 0;
+        width: 100px;
         @include _1024 {
             display: flex;
         }
         &_right {
             border-left: 1px solid #343434;
             justify-content: space-between;
-            padding: 40px 53px 70px;
+            padding: 40px 0 70px;
+            width: 166px;
         }
     }
     &__asideText {
@@ -43,7 +45,7 @@
         justify-content: center;
         writing-mode: vertical-lr;
         &>p {
-            padding: 47px 42px;
+            padding: 47px 0;
             transform: rotate(180deg);
             &:first-child {
                 border-top: 1px solid #fff;
@@ -172,18 +174,14 @@
     }
     &__img {
         background-color: #fff;
+        bottom: 10vh;
         display: none;
+        left: 32.4%;
         padding: 30px 67px 0;
-        position: relative;
+        position: absolute;
         max-width: 400px;
         &::before, &::after {
-            background-color: #fff;
-            bottom: -70px;
-            content: '';
-            height: 150vh;
-            opacity: 0.2;
-            position: absolute;
-            width: 1px;
+            @include line(150vh, auto, -10vh);
         }
         &::before {
             left: -1px;

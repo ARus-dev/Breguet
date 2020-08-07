@@ -6,4 +6,10 @@ for(let burger of burgers) {
         nav.classList.toggle('header__nav_active')
         burger.classList.toggle('header__burger_active')
     })
+    burger.addEventListener('keypress', (e) => {
+        if(e.which === 13) {
+            nav.classList.toggle('header__nav_active')
+            burger.classList.toggle('header__burger_active')
+        }
+    })
 }

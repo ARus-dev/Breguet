@@ -4,6 +4,17 @@
  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 375px) / #{$maxWidth}));
 }
 
+@mixin line($height, $top, $bottom) {
+    background-color: $color-gray;
+    bottom: $bottom;
+    content: '';
+    opacity: 0.2;
+    height: $height;
+    position: absolute;
+    top: $top;
+    width: 1px;
+}
+
 @mixin flex-row {
     align-items: center;
     display: flex;
