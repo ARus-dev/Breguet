@@ -1,0 +1,102 @@
+.section {
+    margin: 65px 0;
+    padding: 0 10px;
+    position: relative;
+    @include _1024 {
+        margin: 100px 0;
+        padding: 0 166px;
+        &::before, &::after {
+            @include line(calc(100% + 200px), -100px, auto);
+        }
+        &::before {
+            left: 100px;
+        }
+        &::after {
+            right: 166px;
+        }
+    }
+    &__title {
+        font-size: 52px;
+        line-height: 90%;
+        margin-bottom: 50px;
+    }
+    &__text {
+        color: $color-gray-dark;
+        font-family: 'RobotoCondensed', Roboto, sans-serif;
+        line-height: 150%;
+        opacity: 0.4;
+    }
+    &__link {
+        border-bottom: 1px solid $color-blue;
+        color: $color-blue;
+        display: inline-block;
+        font-size: 14px;
+        margin-top: 50px;
+        &:hover, &:focus {
+            &>img {
+                transform: translate(10px,- 10px);
+            }
+        }
+        &>img {
+            transition: $transition;
+        }
+    }
+    &__img {
+        margin: 132px -10px 0;
+        position: relative;
+        @include _1024 {
+            margin: 0;
+            margin-left: -166px;
+            width: calc((100% + 332px) * 0.324);
+            &::before, &::after {
+                @include line(calc(100% + 200px), -100px, auto);
+            }
+        }
+        &>img {
+            width: 100%;
+        }
+    }
+    &__infoBlock {
+        background-color: #fff;
+        box-shadow: 10px 10px 65px rgba(7, 13, 19, 0.1);
+        flex-direction: row;
+        justify-content: space-between;
+        left: 10px;
+        position: absolute;
+        padding: 40px 20px;
+        right: 10px;
+        top: 0;
+        text-align: center;
+        transform: translateY(-50%);
+        z-index: 20;
+        @include _600 {
+            padding: 40px 15%;
+        }
+        @include _1024 {
+            align-items: center;
+            bottom: 13.46%;
+            flex-direction: column;
+            left: auto;
+            max-width: 217px;
+            padding: 70px 40px;
+            right: 0;
+            top: 13.46%;
+            transform: translateX(50%);
+        }
+        &>div:first-child  {
+            margin: 0;
+        }
+    }
+    &__row {
+        z-index: 20;
+        @include _1024 {
+            align-items: center;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    }
+    &__item {
+        flex: 0 1 50%;
+    }
+}

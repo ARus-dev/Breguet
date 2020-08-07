@@ -6,7 +6,45 @@ block variables
 
 block content
 	include ../blocks/modules/header/header
-
+	main
+		- var sectionClass = " section"
+		include ../blocks/modules/section/section
+			block sectionContent
+				.section__row
+					.section__info.section__item
+						h2.section__title.
+							LUXURY <span class="text_color_blue text_block">WATCH</span>
+						p.section__text.
+							Breguet is a highly regarded watch manufacturer. 
+							Over the years, notable Breguet patrons and timepieces owners 
+							include King George III, Queen Victoria, Alexandre I of Russia, 
+							Napoléon Bonaparte, Ettore Bugatti, Sir Winston Churchill, 
+							Sergei Rachmaninoff, Gioachino Rossini, Arthur Rubinstein and so on. 
+							In particular, the Breguet & Fils, Paris No. 
+							2667 (1814) pocket watch ranks as one of the world's most expensive 
+							watches ever sold at auction, fetching US$4.69 million 
+							(4,339,000 CHF) in Geneva on May 14, 2012.
+						a.section__link(href="/").
+							go to catalogue
+							<img src="/img/arrow_blue.png" alt="">	
+					.section__img
+						img(src="/img/watch.jpg", alt="")
+						- infoClass = ' section__infoBlock'
+						-
+							var info = [
+								{
+									title: '100+',
+									fLine: 'famous clients all over',
+									sLine: 'the world'
+								},
+								{
+									title: '50+',
+									fLine: 'famous clients all over',
+									sLine: 'the world'
+								}
+							]
+						include ../blocks/components/info-block/info-block			
+				include ../blocks/components/line/line		
 block scripts
 	script(src="js/main.js")
 	script(src="js/vendor.js")
