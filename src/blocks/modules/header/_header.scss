@@ -146,26 +146,6 @@
             flex-direction: row;
         }
     }
-    &__info {
-        font-family: 'RobotoCondensed', Roboto, sans-serif;
-        font-size: 14px;
-        font-weight: 300;
-        margin-right: 100px;
-    }
-    &__item {
-        &:first-child {
-            margin-bottom: 31px;
-        }
-    }
-    &__subtitle {
-        font-size: 52px;
-        margin-bottom: 6px;
-        opacity: 0.9;
-    }
-    &__text {
-        opacity: 0.5;
-        white-space: pre-line;
-    }
     &__circle {
         align-self: flex-end;
         margin-right: 40px;

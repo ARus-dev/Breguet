@@ -1,0 +1,6 @@
+div(class="info-block" + infoClass)
+    each val in info
+        .info-block__item
+            p.info-block__title=val.title
+            p.info-block__text=val.fLine
+                span.info-block__span=val.sLine

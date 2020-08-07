@@ -1,0 +1,25 @@
+.info-block {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    font-family: 'RobotoCondensed', Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 100px;
+    &__item {
+        &:first-child {
+            margin-bottom: 31px;
+        }
+    }
+    &__title {
+        font-size: 52px;
+        margin-bottom: 6px;
+        opacity: 0.9;
+    }
+    &__text {
+        opacity: 0.5;
+    }
+    &__span {
+        display: block;
+    }
+}

@@ -21,17 +21,21 @@ header
                 AND MARINE 
                 LINES</span> 
             .header__content
-                .header__info
-                    .header__item
-                        p.header__subtitle 100+
-                        p.
-                            <span class="header__text">famous clients all over
-                            the world</span>  
-                    .header__item
-                        p.header__subtitle 300+
-                        p. 
-                            <span class="header__text">years we help our clients 
-                            to keep track of time</span>  
+                -
+                    var info = [
+                        {
+                            title: '100+',
+                            fLine: 'famous clients all over',
+                            sLine: 'the world'
+                        },
+                        {
+                            title: '300+',
+                            fLine: 'years we help our clients',
+                            sLine: 'to keep track of time'
+                        }
+                    ]
+                - var infoClass = ' header__info'     
+                include ../../components/info-block/info-block   
                 .header__img
                     img(src="/img/header-img.png", alt="")
                     .header__circle_withImg    
