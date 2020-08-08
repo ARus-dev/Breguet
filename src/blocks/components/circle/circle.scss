@@ -11,6 +11,7 @@
     position: relative;
     transition: $transition;
     width: 120px;
+    z-index: 20;
     &__icon {
         margin-top: 12px;
     }

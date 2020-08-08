@@ -48,6 +48,7 @@
         font-size: 52px;
         line-height: 90%;
         margin-bottom: 50px;
+        z-index: 20;
         &_big {
             background: #fff;
             color: #000;
@@ -240,6 +241,7 @@
         }
     }
     &__picture {
+        background-color: $color-black;
         &>img {
             width: 100%;
         }

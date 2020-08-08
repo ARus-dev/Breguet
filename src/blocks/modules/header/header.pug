@@ -37,7 +37,7 @@ header
                 - var infoClass = ' header__info'     
                 include ../../components/info-block/info-block   
                 .header__img
-                    img(src="/img/header-img.png", alt="")
+                    img.slider__img(src="/img/header-img.png")
                     .header__circle_withImg    
                         include ../../components/circle/circle   
                             block circle__item
@@ -56,13 +56,7 @@ header
             .header__burger(tabindex="0")
                 .header__burgerLine    
                 .header__burgerLine    
-                .header__burgerLine
-            .slider__dots
-                .slider__dot    
-                .slider__dot    
-                .slider__dot    
-                .slider__dot    
-                .slider__dot.slider__dot_active    
+                .header__burgerLine  
         nav.header__nav
             ul.header__menu
                 - headerLinks = ['Timepieces', 'Jewellery', 'News', 'Point of sale', 'House of Breguet', 'Services', 'History', 'Contact us']

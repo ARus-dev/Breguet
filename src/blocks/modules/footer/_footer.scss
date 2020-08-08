@@ -88,7 +88,9 @@
         }
     }
     &__soc {
-        margin-left: auto;
-        text-align: right;
+       @include _1024 {
+            margin-left: auto;
+            text-align: right;
+       }
     }
 }

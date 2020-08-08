@@ -42,35 +42,6 @@ ul, ol {
 	width: 100%;
 }
 
-.languages {
-	display: none;
-	position: absolute;
-	transition: $transition;
-	&_active {
-		display: block;
-	}
-}
-
-.slider {
-	&__dots {
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-		margin: -15px 0;
-	}
-	&__dot {
-		background-color: #808182;
-		border-radius: 50%;
-		height: 4px;
-		margin: 15px 0;
-		width: 4px;
-		&_active {
-			background-color: $color-blue;
-			height: 10px;
-			width: 10px;
-		}
-	}
-}
 .text {
 	&_block {
 		display: block;

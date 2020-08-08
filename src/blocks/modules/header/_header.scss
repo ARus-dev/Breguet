@@ -24,6 +24,7 @@
         border-right: 1px solid #343434;
         display: none;
         flex-direction: column;
+        justify-content: stretch;
         padding: 40px 0 0;
         width: 100px;
         @include _1024 {
@@ -37,19 +38,24 @@
         }
     }
     &__asideText {
+        align-items: center;
         display: flex;
         flex-grow: 1;
         font-family: 'RobotoCondensed';
         font-size: 18px;
         font-weight: 300;
         justify-content: center;
+        width: 100%;
         writing-mode: vertical-lr;
         &>p {
             padding: 47px 0;
             transform: rotate(180deg);
             &:first-child {
+                align-items: center;
                 border-top: 1px solid #fff;
+                display: flex;
                 opacity: 0.3;
+                width: 100%;
             }
         }
     }
@@ -139,6 +145,7 @@
         @include adaptiv-font(52, 45);
         line-height: 90%;
         margin-bottom: 53px;
+        z-index: 20;
         &>span {
             @include _1024 {
                 white-space: pre-line;
