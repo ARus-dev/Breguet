@@ -33,6 +33,15 @@ ul, ol {
 }
 
 
+.btn {
+	background: none;
+	border: none;
+	border-radius: 50%;
+	color: #fff;
+	height: 100%;
+	width: 100%;
+}
+
 .slider {
 	&__dots {
 		align-items: center;
