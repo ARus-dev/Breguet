@@ -73,6 +73,10 @@
         transition: $transition;
         width: 40px;
         z-index: 999;
+        &:focus {
+            outline: none;
+            transform: scale(1.2);
+        }
         @include _600 {
             height: 60px;
             padding: 0 17px;

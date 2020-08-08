@@ -14,7 +14,11 @@
     &__icon {
         margin-top: 12px;
     }
-    &:hover, &:focus {
+    &:hover {
 		transform: scale(1.2);
-	}
+    }
+    &>button:focus {
+        border: 3px solid #fff;
+        outline: none;
+    }
 }
