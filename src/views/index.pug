@@ -11,7 +11,7 @@ block content
 		include ../blocks/modules/section/section
 			block sectionContent
 				.section__row
-					.section__info.section__item
+					.section__item
 						h2.section__title.
 							LUXURY <span class="text_color_blue text_block">WATCH</span>
 						p.section__text.
@@ -48,7 +48,7 @@ block content
 		include ../blocks/modules/section/section
 			block sectionContent
 				.section__row
-					.section__info.section__item
+					.section__item
 						h2.section__title.
 							<span class="text_color_blue text_block">POPULAR</span> WATCH
 						p.section__text.
@@ -85,6 +85,18 @@ block content
 							p play
 							.circle__icon.
 								<img src="/img/arrow-right.png" alt="">
+		- sectionClass = "section section_bg"
+		include ../blocks/modules/section/section
+			.section__info
+				h2.section__title.section__title_small.
+					BREGUET UNVEILS THE <span class="text_color_blue">BLUE</span> 
+					VERSION OF ITS CLASSIQUE TOURBILLON 
+					EXTRA-PLAT <span class="text_color_blue">AUTOMATIQUE</span>
+				a.section__link(href="/") learn more 
+					img(src="/img/arrow_blue.png", alt="")
+			picture.section__picture
+				source(media="(min-width: 768px)", srcset="/img/clock-background.jpg")
+				img(src="/img/clock-background-mobile.jpg", alt="")
 block scripts
 	script(src="js/main.js")
 	script(src="js/vendor.js")
