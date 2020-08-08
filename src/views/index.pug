@@ -73,7 +73,18 @@ block content
 							img(src=img, alt="")
 							.section__slideInfo
 								p CLASSIQUE
-								span.text_block=item						
+								span.text_block=item
+		- sectionClass = " section section_relative"
+		include ../blocks/modules/section/section
+			h2.section__title.section__title_big BREGUET
+				span.text_block WATCH
+			.section__circle.section__circle_center
+				include ../blocks/components/circle/circle
+					block circle__item
+						button.section__btn.btn
+							p play
+							.circle__icon.
+								<img src="/img/arrow-right.png" alt="">
 block scripts
 	script(src="js/main.js")
 	script(src="js/vendor.js")

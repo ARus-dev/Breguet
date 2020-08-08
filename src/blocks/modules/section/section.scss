@@ -10,7 +10,8 @@
             background: none;
             border-left: 1px solid $color-gray;
             border-right: 1px solid $color-gray;
-        }
+            z-index: 10;
+        } 
         &::before {
             left: 100px;
             width: calc(32.4% - 101px);
@@ -20,10 +21,43 @@
             width: calc(100% - (32.4% + 400px + 168px));
         }
     }
+    &_relative {
+        background: url('/img/text-mask-mobile.jpg');
+        background-size: cover;
+        padding: 0;
+        @include _768 {
+           background: url('/img/text-mask.jpg'); 
+        }
+        @include _1024 {
+            padding: 0;
+        }
+    }
     &__title {
         font-size: 52px;
         line-height: 90%;
         margin-bottom: 50px;
+        &_big {
+            background: #fff;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            @include adaptiv-font(170, 120);
+            justify-content: center;
+            margin: 0;
+            mix-blend-mode: lighten;
+            padding: 30px 0;
+            text-align: center;
+            transform: rotate(180deg);
+            writing-mode: vertical-rl;
+            width: 100%;
+            @include _768 {
+                transform: rotate(0);
+                writing-mode: horizontal-tb;
+            }
+            @include _1024 {
+                padding: 90px 0;
+            }
+        }
     }
     &__text {
         color: $color-gray-dark;
@@ -107,6 +141,19 @@
         margin: 50px auto;
         &_left {
             margin-left: calc((100% + 166px + 166px) * 0.324 - 166px - 60px);
+        }
+        &_center {
+            left: 50%;
+            margin: -60px 0 0 -60px;
+            position: absolute;
+            top: 50%;
+            @include _1024 {
+                left: 32.4%;
+                margin-top: -60px;
+                position: absolute;
+                top: 50%;
+                z-index: 20;
+            }
         }
     }
     &__list {
