@@ -217,6 +217,7 @@
         transition: $transition;
         visibility: hidden;
         width: 100%;
+        z-index: 30;
         @include _600 {
             padding: 140px 20px;
             width: auto;
