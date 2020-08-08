@@ -42,6 +42,15 @@ ul, ol {
 	width: 100%;
 }
 
+.languages {
+	display: none;
+	position: absolute;
+	transition: $transition;
+	&_active {
+		display: block;
+	}
+}
+
 .slider {
 	&__dots {
 		align-items: center;

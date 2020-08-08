@@ -1,0 +1,42 @@
+footer
+    .footer
+        .footer__top
+            .footer__item
+                .footer__logo
+                    img(src="/img/logo.png", alt="")
+            .footer__item.footer__nav
+                ul.footer__menu
+                    li.footer__link.footer__link_title MENU
+                    - var items = ['TIMEPIECES', 'JEWELERRY', 'NEWS', 'POINT OF SALE']
+                    each item in items
+                        li.footer__link
+                            a(href="#")=item
+                ul.footer__menu
+                    - items = ['HOUSE OF BREGUET', 'SERVICES', 'HISTORY', 'CONTACT US']
+                    each item in items
+                        li.footer__link
+                            a(href="#")=item
+            .footer__item.footer__soc
+                ul.footer__menu
+                    li.footer__link.footer__link_title FOLLOW US
+                    - items = ['FACEBOOK', 'TWITTER', 'INSTAGRAM', 'YOUTUBE']
+                    each item in items
+                        li.footer__link
+                            a(href="#")=item
+                    li.footer__link.footer__link_gray.footer__link_mobile Subscribe to newsletter    
+        .footer__bottom
+            .footer__item
+                p.footer__link_desktop All rights reserved 2020
+            .footer__item
+                #selectLanguage English
+                    img(src="/img/arrow-down.png", alt="")
+                    .languages
+                        p Russian
+                        p Deutch
+                p
+                    a(href="#") Careers
+                p
+                    a(href="#") Legal Terms
+                p.footer__link_desktop Subscribe to newsletter
+            .footer__item_last
+                p.footer__link_mobile All rights reserved 2020       

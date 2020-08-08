@@ -1,0 +1,94 @@
+.footer {
+    background-color: $color-black;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'RobotoCondensed', Roboto, sans-serif;
+    padding: 50px 60px 25px 10px;
+    @include _1024 {
+        padding: 46px 0 46px 0;        
+    }
+    &__top {
+        @include _768 {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        @include _1024 {
+            justify-content: normal;
+            padding: 0 166px 0 100px;
+        }
+    }
+    &__logo {
+        width: 60px;
+    }
+    &__nav {
+        align-items: flex-end;
+        display: flex;
+        margin: 55px 0;
+        @include _1024 {
+            margin-left: calc((100%) * 0.324 - 65px);
+        }
+        &>.footer__menu:first-child {
+            margin-right: 68px;
+        }
+    }
+    &__bottom {
+        color: rgba(255, 255, 255, 0.4);
+        @include _1024 {
+            display: flex;
+            padding: 0 166px 0 100px;
+        }
+        &>.footer__item:nth-child(2) {
+            align-items: center;
+            display: flex;
+            margin: 60px 0 30px;
+            &>p, &>div {
+                cursor: pointer;
+                margin-right: 40px;
+                position: relative;
+            }
+            @include _1024 {
+                margin: 0;
+                margin-left: calc(100% * 0.324 - 155px);
+            }
+        }  
+    }
+    &__link {
+        margin: 15px 0;
+        transition: $transition;
+        &>a:focus {
+            color: $color-blue;
+            outline: none;
+        }
+        &:hover {
+            color: $color-blue;
+        }
+        &_title {
+            color: rgba(255, 255, 255, 0.2);
+            font-family: 'ArchivoBlack';
+            &:hover {
+                color: rgba(255, 255, 255, 0.2);
+            }
+        }
+        &_gray {
+            color: rgba(255, 255, 255, 0.4);
+            margin-top: 25px;
+        }
+        &_mobile {
+            @include _768 {
+                display: none;
+            }
+        }
+        &_desktop {
+            display: none;
+            @include _768 {
+                display: block;
+            }
+        }
+    }
+    &__soc {
+        margin-left: auto;
+        text-align: right;
+    }
+}
