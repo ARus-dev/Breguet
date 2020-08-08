@@ -9,8 +9,12 @@
     height: 120px;
     justify-content: center;
     position: relative;
+    transition: $transition;
     width: 120px;
     &__icon {
         margin-top: 12px;
     }
+    &:hover, &:focus {
+		transform: scale(1.2);
+	}
 }

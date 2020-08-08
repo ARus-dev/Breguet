@@ -43,8 +43,37 @@ block content
 									sLine: 'the world'
 								}
 							]
-						include ../blocks/components/info-block/info-block			
-				include ../blocks/components/line/line		
+						include ../blocks/components/info-block/info-block
+		- sectionClass = " section"
+		include ../blocks/modules/section/section
+			block sectionContent
+				.section__row
+					.section__info.section__item
+						h2.section__title.
+							<span class="text_color_blue text_block">POPULAR</span> WATCH
+						p.section__text.
+							Breguet's philosophy can be defined as a tireless process 
+							of creative search and implementation of innovations, 
+							the desire to always be one step ahead of its era and 
+							at the same time strictly comply with the technical and 
+							aesthetic standards developed by A.L. Breguet and 
+							laid the foundations of modern watchmaking.	
+					.section__circle.section__circle_left
+						include ../blocks/components/circle/circle
+							block circle__item
+								button.section__btn.btn
+									p full shop
+									.circle__icon.
+										<img src="/img/arrow.png" alt="">
+				.section__list.section__slider
+					- var list = ['7137', '7138', '7139', '7140', '7141', '7142']	
+					each item in list
+						- var img = "/img/catalog/classic" + item + ".jpg"
+						.section__slide
+							img(src=img, alt="")
+							.section__slideInfo
+								p CLASSIQUE
+								span.text_block=item						
 block scripts
 	script(src="js/main.js")
 	script(src="js/vendor.js")
