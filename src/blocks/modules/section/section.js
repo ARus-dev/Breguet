@@ -1,4 +1,5 @@
-let slider = document.querySelector('.slider'),
+if (document.documentElement.clientWidth < 768) {
+    let slider = document.querySelector('.slider'),
   sliderList = slider.querySelector('.slider-list'),
   sliderTrack = slider.querySelector('.slider-track'),
   slides = slider.querySelectorAll('.slide'),
@@ -158,3 +159,4 @@ sliderList.classList.add('grab');
 sliderTrack.addEventListener('transitionend', () => allowSwipe = true);
 slider.addEventListener('touchstart', swipeStart);
 slider.addEventListener('mousedown', swipeStart);
+}
