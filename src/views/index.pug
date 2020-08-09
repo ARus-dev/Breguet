@@ -65,15 +65,17 @@ block content
 									p full shop
 									.circle__icon.
 										<img src="/img/arrow.png" alt="">
-				.section__list.section__slider
-					- var list = ['7137', '7138', '7139', '7140', '7141', '7142']	
-					each item in list
-						- var img = "/img/catalog/classic" + item + ".jpg"
-						.section__slide
-							img(src=img, alt="")
-							.section__slideInfo
-								p CLASSIQUE
-								span.text_block=item
+				.slider
+					.slider-list
+						.section__list.slider-track
+							- var list = ['7137', '7138', '7139', '7140', '7141', '7142']	
+							each item in list
+								- var img = "/img/catalog/classic" + item + ".jpg"
+								.section__slide.slide
+									img(src=img, alt="")
+									.section__slideInfo
+										p CLASSIQUE
+										span.text_block=item
 		- sectionClass = " section section_relative"
 		include ../blocks/modules/section/section
 			h2.section__title.section__title_big BREGUET

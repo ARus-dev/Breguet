@@ -52,3 +52,24 @@ ul, ol {
 		}
 	}
 }
+
+.slider {
+	position: relative;
+	user-select: none;
+	touch-action: pan-y;
+}
+.slider img {
+	pointer-events: none;
+}
+.slider-list.grab {
+	cursor: grab;
+}
+.slider-list.grabbing{
+	cursor: grabbing;
+}
+.slide {
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
