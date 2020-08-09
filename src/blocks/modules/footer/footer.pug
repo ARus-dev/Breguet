@@ -3,7 +3,9 @@ footer
         .footer__top
             .footer__item
                 .footer__logo
-                    img(src="/img/logo.png", alt="")
+                    picture
+                        source(media="(min-width: 1024px)", srcset="/img/logo.png")
+                        img(src="/img/logo-mobile.png", alt="")
             .footer__item.footer__nav
                 ul.footer__menu
                     li.footer__link.footer__link_title MENU
